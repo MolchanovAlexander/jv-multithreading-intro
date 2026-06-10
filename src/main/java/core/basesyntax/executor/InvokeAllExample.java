@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class InvokeAllExample {
-    public static void main(String[] args) throws InterruptedException {
+    static void main(String[] args) throws InterruptedException {
         System.out.println("started at: " + LocalTime.now());
         try (ExecutorService executor = Executors.newFixedThreadPool(20)) {
 

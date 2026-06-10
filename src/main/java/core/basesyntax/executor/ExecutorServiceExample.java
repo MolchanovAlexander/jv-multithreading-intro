@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class ExecutorServiceExample {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+    static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         Callable<String> task1 = () -> {
